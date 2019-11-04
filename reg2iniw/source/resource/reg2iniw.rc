@@ -1,0 +1,227 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Russian resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_RUS)
+#ifdef _WIN32
+LANGUAGE LANG_RUSSIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUT DIALOGEX 0, 0, 187, 95
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "About Reg2Ini"
+FONT 8, "Verdana", 400, 0, 0xCC
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Russian resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "redsh"
+            VALUE "FileDescription", "reg2ini launcher"
+            VALUE "FileVersion", "1.0"
+            VALUE "InternalName", "reg2iniw"
+            VALUE "LegalCopyright", "WTFPL public license"
+            VALUE "OriginalFilename", "reg2iniw.exe"
+            VALUE "ProductName", "reg2ini"
+            VALUE "ProductVersion", "1.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_WIZARD DIALOGEX 0, 0, 259, 303
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Reg2Ini wizard"
+FONT 8, "Verdana", 400, 0, 0xCC
+BEGIN
+    LTEXT           "Program name to run:",IDC_STATIC,6,6,234,8
+    EDITTEXT        IDC_PROGRAM_NAME,6,18,216,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_PROGRAM_NAME_SELECT,228,18,24,13
+    LTEXT           "Configuration file name (/c):",IDC_STATIC,6,36,95,8
+    EDITTEXT        IDC_CONFIG_NAME,6,48,198,13,ES_AUTOHSCROLL
+    CONTROL         "Disable",IDC_DISABLE_CONFIG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,212,49,40,10
+    LTEXT           "Data directory name (/d):",IDC_STATIC,6,66,86,8
+    EDITTEXT        IDC_DATA_DIRECTORY_NAME,6,78,198,13,ES_AUTOHSCROLL
+    CONTROL         "Disable",IDC_DISABLE_FS_REDIR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,211,79,40,10
+    CONTROL         "Allow other hooks if possible (/v)",IDC_VECTORED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,102,124,10
+    CONTROL         "Allow remove other hooks (/f)",IDC_FORCED,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,132,102,115,10
+    CONTROL         "Kill process on inject error (/k)",IDC_TERMINATE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,114,117,10
+    CONTROL         "Hook all child processes (/g)",IDC_GLOBAL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,132,114,109,10
+    CONTROL         "Enable reg2ini for child processes, but not for base process (/s)",
+                    IDC_SHELL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,126,
+                    237,10
+    EDITTEXT        IDC_DELAY,96,142,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Configuration save delay:",IDC_STATIC,6,144,86,8
+    LTEXT           "ms (/t)",IDC_STATIC,141,144,24,8
+    LTEXT           "Don't hook child processes (filenames only, separate with spaces) (/n):",
+                    IDC_STATIC,6,162,235,8
+    EDITTEXT        IDC_IGNORE,6,174,243,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMMAND,6,210,243,48,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_READONLY | WS_VSCROLL
+    LTEXT           "Command line:",IDC_STATIC,6,198,51,8
+    CONTROL         "Use console launcher",IDC_CONSOLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,6,264,85,10
+    PUSHBUTTON      "About",IDC_SHOW_ABOUT,6,282,50,13
+    PUSHBUTTON      "Copy",IDC_COPY_CMD,136,282,50,13
+    PUSHBUTTON      "Run",IDC_RUN_CMD,199,282,50,13
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN                ICON                    "main.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_WIZARD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 296
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
